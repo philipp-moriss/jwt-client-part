@@ -1,32 +1,72 @@
-import { observer } from 'mobx-react-lite';
-import React, {ChangeEvent, useContext, useState} from 'react';
-import {Context} from "../../index";
+@import "src/globalStyles/colors";
 
-const LoginForm: React.FC = () => {
+.wrapper{
+  background-color: $black;
+  &-inner{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
-    const [email, setEmail] = useState('')
-    const [password, setPassword] = useState('')
+.text{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+  color: $gray;
+  margin-bottom: 40px;
+}
 
-    const {store} = useContext(Context)
+.input{
+  margin-top: 20px;
+  max-width: 600px;
+  width: 100%;
+  height: 35px;
+  border-radius: 100px;
+  padding: 10px 0 10px 16px;
+  border: 1px solid $gray;
+  backdrop-filter: blur(32px);
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: $black;
+  outline:none;
 
-    const onChangeHandler = (event: ChangeEvent<HTMLInputElement>) => {
-        if (event.currentTarget.name === 'email') {
-            setEmail(event.currentTarget.value)
-        }
-        if (event.currentTarget.name === 'password') {
-            setPassword(event.currentTarget.value)
-        }
+  &::placeholder{
+    color: $black;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &-inner{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+}
+
+.button{
+  &-inner{
+    max-width: 450px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 473px) {
+      flex-direction: column;
+      height: 100px;
+      justify-content: space-between;
     }
-
-    return (
-        <div>
-            <input value={email} onChange={onChangeHandler} name={'email'} type={'text'} placeholder={'Email'}/>
-            <input value={password} onChange={onChangeHandler} name={'password'} type={'password'}
-                   placeholder={'Password'}/>
-            <button onClick={() => store.login(email, password)}>логин</button>
-            <button onClick={() => store.registration(email, password)}>регистрация</button>
-        </div>
-    );
-};
-
-export default observer(LoginForm);
+  }
+}

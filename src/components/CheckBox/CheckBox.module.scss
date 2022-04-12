@@ -1,0 +1,45 @@
+.inner{
+  background-color: white;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 458px;
+  border-radius: 12px;
+  position: relative;
+  cursor: pointer;
+}
+
+.checker{
+  position: absolute;
+  bottom: 50%;
+  width: 63px;
+  height: 30px;
+  border-radius: 11px;
+  background-color: #000000;
+  transform: translateY(50%);
+  right: 9%;
+  transition: all 1s;
+}
+
+.text{
+  transition: 1.5s;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.inner.true .checker{
+  right: 100%;
+  opacity: 0;
+}
+
+.inner.true .text{
+  font-size: 14px;
+}

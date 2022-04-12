@@ -1,9 +1,33 @@
-import React from 'react';
+@import "src/globalStyles/colors";
 
-export const ConfirmMailPage = () => {
-    return (
-        <div className={s}>
+.wrapper{
+    min-height: 100vh;
+    background-color: $black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-        </div>
-    );
-};
+
+.text{
+    font-family: 'Poppins';
+    padding: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 59px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: $white;
+}
+
+.mail{
+    max-height: 400px;
+    max-width: 400px;
+    margin: 20px;
+    img{
+        height: 100%;
+        width: 100%;
+    }
+}

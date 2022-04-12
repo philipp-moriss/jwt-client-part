@@ -1,17 +1,26 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
+import {createRoot} from 'react-dom/client';
+import './globalStyles/reset.scss';
+import './globalStyles/main.scss';
+//fonts
+import './assets/fonts/poppins/Poppins-ExtraBold.ttf'
+import './assets/fonts/poppins/Poppins-Black.ttf'
+import './assets/fonts/poppins/Poppins-Bold.ttf'
+import './assets/fonts/poppins/Poppins-ExtraLight.ttf'
+import './assets/fonts/poppins/Poppins-Light.ttf'
+import './assets/fonts/poppins/Poppins-Medium.ttf'
+import './assets/fonts/poppins/Poppins-Thin.ttf'
+import './assets/fonts/poppins/Poppins-SemiBold.ttf'
+import './assets/fonts/poppins/Poppins-Regular.ttf'
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import {MyStoreProvider} from "./store/Context/Context";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const container = document.getElementById('root');
+if (container) {
+    const root = createRoot(container);
+    root.render(
+        <MyStoreProvider>
+            <App/>
+        </MyStoreProvider>
+    );
+}

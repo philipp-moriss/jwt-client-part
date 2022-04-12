@@ -1,0 +1,22 @@
+@import '/src/globalStyles/colors.scss';
+
+.parameters{
+  align-self: flex-end;
+  display: flex;
+  margin-bottom: 40px;
+  &-parameter{
+    display: flex;
+    margin-right: 16px;
+    &-icon{
+      padding-right: 6px;
+    }
+    &-description{
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 12px;
+      color: $white;
+    }
+  }
+}

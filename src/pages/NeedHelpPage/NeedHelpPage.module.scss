@@ -1,9 +1,36 @@
-import React from 'react';
+@import '/src/globalStyles/colors.scss';
 
-export const NeedHelpPage = () => {
-    return (
-        <div>
+.wrapper{
+    background-color: $black;
+    padding: 113px 20px 100px;
+}
 
-            </div>
-    );
-};
+.info{
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &-title{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 42px;
+        color: $white;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    &-sub-title{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+        color: $gray;
+        margin-bottom: 12px;
+    }
+}

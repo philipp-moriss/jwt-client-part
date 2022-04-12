@@ -1,9 +1,78 @@
-import React from 'react';
+@import '/src/globalStyles/colors.scss';
 
-export const ToolsPage = () => {
-    return (
-        <div>
+.wrapper{
+    background-color: $black;
+    display: flex;
+    @media (max-width: 600px) {
+        flex-direction: column;
+    }
+}
 
-        </div>
-    );
-};
+.left-side,.right-side{
+    width: 50%;
+    min-height: 540px;
+    @media (max-width: 600px) {
+       width: 100%;
+    }
+}
+
+.left-side{
+    padding: 0 20px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info{
+    &-inner{
+        max-width: 600px;
+        width: 100%;
+    }
+
+    &-sub-title{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: $gray;
+        margin-bottom: 6px;
+    }
+
+    &-title{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 32px;
+        color: $white;
+        margin-bottom: 14px;
+    }
+
+    &-text{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: $white;
+        margin-bottom: 20px;
+    }
+}
+
+.right-side{
+    background-image: url("../../assets/bg/tools-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    @media (max-width: 600px) {
+        padding: 0;
+    }
+}

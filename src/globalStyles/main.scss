@@ -1,3 +1,4 @@
+@import '/src/globalStyles/colors.scss';
 
 .container{
     max-width: 1200px;
@@ -5,56 +6,72 @@
     margin: 0 auto;
 }
 
+body::-webkit-scrollbar {
+    width: 6px;
+    background-color: #f9f9fd;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: $header-bg;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background-color: $gray;
+}
+
 @font-face {
     font-family: 'Poppins';
     font-weight: 100 ;
-    src: local('Poopins'), url('./assets/fonts/poppins/Poppins-Thin.ttf') format('truetype');
+    src: local('Poopins'), url('../assets/fonts/poppins/Poppins-Thin.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Poppins';
     font-weight: 200 ;
-    src: local('Poopins'), url('./assets/fonts/poppins/Poppins-ExtraLight.ttf') format('truetype');
+    src: local('Poopins'), url('../assets/fonts/poppins/Poppins-ExtraLight.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Poppins';
     font-weight: 300 ;
-    src: local('Poopins'), url('./assets/fonts/poppins/Poppins-Light.ttf') format('truetype');
+    src: local('Poopins'), url('../assets/fonts/poppins/Poppins-Light.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Poppins';
     font-weight: 400 ;
-    src: local('Poopins'), url('./assets/fonts/poppins/Poppins-Regular.ttf') format('truetype');
+    src: local('Poopins'), url('../assets/fonts/poppins/Poppins-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Poppins';
     font-weight: 500 ;
-    src: local('Poopins'), url('./assets/fonts/poppins/Poppins-Medium.ttf') format('truetype');
+    src: local('Poopins'), url('../assets/fonts/poppins/Poppins-Medium.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Poppins';
     font-weight: 600 ;
-    src: local('Poopins'), url('./assets/fonts/poppins/Poppins-SemiBold.ttf') format('truetype');
+    src: local('Poopins'), url('../assets/fonts/poppins/Poppins-SemiBold.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Poppins';
     font-weight: 700 ;
-    src: local('Poopins'), url('./assets/fonts/poppins/Poppins-Bold.ttf') format('truetype');
+    src: local('Poopins'), url('../assets/fonts/poppins/Poppins-Bold.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Poppins';
     font-weight: 800 ;
-    src: local('Poopins'), url('./assets/fonts/poppins/Poppins-ExtraBold.ttf') format('truetype');
+    src: local('Poopins'), url('../assets/fonts/poppins/Poppins-ExtraBold.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Poppins';
     font-weight: 900 ;
-    src: local('Poopins'), url('./assets/fonts/poppins/Poppins-Black.ttf') format('truetype');
+    src: local('Poopins'), url('../assets/fonts/poppins/Poppins-Black.ttf') format('truetype');
 }

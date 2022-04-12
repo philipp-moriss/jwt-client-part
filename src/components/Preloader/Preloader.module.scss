@@ -1,10 +1,51 @@
-import React from 'react'
-import styles from './Preloader.module.scss'
+@import "src/globalStyles/colors";
 
-export const Preloader = () => {
-    return (
-        <div className={styles['preloader-wrapper']}>
-            <div className={styles['preloader']}></div>
-        </div>
-    )
+.preloader {
+  width: 40px;
+  height: 40px;
+  background-color: $preloaderColor;
+  position: relative;
+  animation: roundMove 3s infinite linear;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 100px;
+    width: 40px;
+    height: 40px;
+    background-color: $preloaderColor;
+    animation: roundMove 3s infinite linear;
+  }
+
+  &::before {
+    content: '';
+    right: 100px;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    animation: roundMove 3s infinite linear;
+    background-color: $preloaderColor;
+  }
+
+  &-wrapper {
+    height: 100vh;
+    background-color: $black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+@keyframes roundMove {
+  from {
+    transform: rotate(0deg) translate(-60px) rotate(0deg);
+  }
+  50% {
+    width: 50px;
+    height: 50px;
+  }
+  to {
+    transform: rotate(360deg) translate(-60px) rotate(-360deg);
+  }
 }

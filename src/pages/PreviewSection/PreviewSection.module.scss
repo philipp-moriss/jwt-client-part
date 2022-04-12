@@ -1,0 +1,52 @@
+@import '/src/globalStyles/colors.scss';
+
+.wrapper {
+  min-height: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+}
+
+.section-container{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 600px;
+  padding: 0 40px;
+  @media (max-width: 500px) {
+    padding: 0 10px;
+  }
+}
+
+.section {
+  &-inner {
+    height: 300px;
+    max-width: 300px;
+    width: 100%;
+    padding-right: 20px;
+    position: relative;
+  }
+
+  &-title{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $white;
+  }
+
+  &-text{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: $gray;
+    margin-bottom: 204px;
+  }
+}

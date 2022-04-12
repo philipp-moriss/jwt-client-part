@@ -1,0 +1,27 @@
+@import "src/globalStyles/colors";
+
+.inner {
+  position: fixed;
+  bottom: 30px;
+  font-family: 'Poppins';
+  font-size: 12px;
+  left: 30px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  transition: 1s;
+  background-color: rgba(24, 24, 24, 0.2901960784);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  @media (max-width: 500px) {
+      display: none;
+  }
+  &:hover{
+    color: $black;
+    font-size: 16px;
+    background-color: $white;
+  }
+}
