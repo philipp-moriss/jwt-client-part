@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/jwt-client-part/static/css/main.d2ca2055.css",
-    "main.js": "/jwt-client-part/static/js/main.571e3a4b.js",
+    "main.js": "/jwt-client-part/static/js/main.b3e2615a.js",
     "static/media/bg-home.png": "/jwt-client-part/static/media/bg-home.610285af2acdbc600e3f.png",
     "static/media/leafs-bg.jpg": "/jwt-client-part/static/media/leafs-bg.de55655f0d08022d7c36.jpg",
     "static/media/bg-3.jpg": "/jwt-client-part/static/media/bg-3.7ad913a964f70de1429e.jpg",
@@ -36,10 +36,10 @@
     "static/media/facebook.svg": "/jwt-client-part/static/media/facebook.28743eafdbbab61f48f49543d3ef64e0.svg",
     "static/media/Poppins-ExtraBold.ttf": "/jwt-client-part/static/media/Poppins-ExtraBold.31d6cfe0d16ae931b73c.ttf",
     "main.d2ca2055.css.map": "/jwt-client-part/static/css/main.d2ca2055.css.map",
-    "main.571e3a4b.js.map": "/jwt-client-part/static/js/main.571e3a4b.js.map"
+    "main.b3e2615a.js.map": "/jwt-client-part/static/js/main.b3e2615a.js.map"
   },
   "entrypoints": [
     "static/css/main.d2ca2055.css",
-    "static/js/main.571e3a4b.js"
+    "static/js/main.b3e2615a.js"
   ]
 }
